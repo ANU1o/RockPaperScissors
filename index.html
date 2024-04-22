@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#00202b" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANU1o - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1 Header>
+      <img Logo src="./wordmarklyt.svg" alt="" />'s<br />
+      🪨Rock <br />
+      📃Paper <br />
+      ✂️Scissors
+    </h1>
+    <div Counter>
+      <div Player>
+        <h4>Player</h4>
+        <h1 id="PCount">0</h1>
+      </div>
+      <div id="choices"><i class="fa-solid fa-circle"></i></div>
+      <div Computer>
+        <h4>Computer</h4>
+        <h1 id="CCount">0</h1>
+      </div>
+    </div>
+    <div btn-container>
+      <button rock onclick="playGame('🪨')">🪨</button>
+      <button paper onclick="playGame('📃')">📃</button>
+      <button scissors onclick="playGame('✂️')">✂️</button>
+    </div>
+    <button onclick="goFullscreen()" Fullscreen title="Toggle Fullscreen">
+      <i class="fa-solid fa-expand"></i>
+    </button>
+    <div id="try-holder" tryHolder>0</div>
+
+    <!-- Result Dialog Section -->
+    <div id="dialogBox">
+      <div id="msg">
+        <span id="result"></span>
+        <div id="btngrp">
+          <button onclick="reset()">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          Retry
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/38647df40d.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./gameLogic.js"></script>
+</html>
